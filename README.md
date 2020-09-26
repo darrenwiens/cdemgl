@@ -15,7 +15,6 @@ Tool that creates glTF model from CDEM raster grid
 `export outputs_dir='/path/for/outputs'`
 
 ## Usage
-`python main.py --help`
 ```
 Usage: main.py [OPTIONS]
 

@@ -36,6 +36,10 @@ Options:
   --help                          Show this message and exit.
 ```
 
+## Outputs
+- `<outputs_dir>/intermediate`: various geographic/projected DEMs and images
+- `<outputs_dir>/model`: gltf/bin or glb model, html viewer for model
+
 ## Examples
 `python cdemgl/main.py --coords -118.439 52.135`
 

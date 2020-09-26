@@ -3,14 +3,16 @@ Tool that creates glTF model from CDEM raster grid
 
 ## Install
 `pip install -r requirements.txt`
+
 `pip install -e .`
 
 ## Environment Variables
 - `download_dir`: root directory that will hold raw CDEM data
 - `outputs_dir`: root directory that will store outputs (intermediate and final model)
 
-`export download_dir='/Volumes/passport_hd/misc_data/cdem'`
-`export outputs_dir='outputs'`
+`export download_dir='/path/for/cdem/data'`
+
+`export outputs_dir='/path/for/outputs'`
 
 ## Usage
 `python main.py --help`
@@ -36,9 +38,12 @@ Options:
 ```
 
 ## Examples
-`python cdemgl/main.py --coords -118.43948364257812 52.13559538802446`
-`python cdemgl/main.py --coords -118.43948364257812 52.13559538802446 --zfactor 2`
-`python cdemgl/main.py --coords -118.43948364257812 52.13559538802446 --output gltf`
-`python cdemgl/main.py --coords -123.06919097900389 49.337651296668845 --zfactor 2 --outsize 2000`
+`python cdemgl/main.py --coords -118.439 52.135`
+
+`python cdemgl/main.py --coords -118.439 52.135 --zfactor 2`
+
+`python cdemgl/main.py --coords -118.439 52.135 --output gltf`
+
+`python cdemgl/main.py --coords -123.069 49.337 --outsize 2000`
 
 ![Example result: Vancouver, BC](img/vancouver.gif)

@@ -1,5 +1,9 @@
 # cdemgl
-Tool that creates glTF model from CDEM raster grid
+Tool that creates glTF model from CDEM raster grid.
+
+Elevation source: [CDEM FTP](http://ftp.geogratis.gc.ca/pub/nrcan_rncan/elevation/cdem_mnec/)
+
+Imagery source: [sat-api](https://github.com/sat-utils/sat-api)
 
 ## Install
 `pip install -r requirements.txt`

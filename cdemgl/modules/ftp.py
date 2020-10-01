@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import zipfile
 from ftplib import FTP
 from pathlib import Path
@@ -31,7 +32,7 @@ def download_dem(poi):
     pnt = poi.point
 
     with open(
-        os.path.join(os.path.dirname(__file__), "../data/cdem_grid.geojson"), "r"
+        os.path.join(os.path.dirname(sys.argv[0]), "data/cdem_grid.geojson"), "r"
     ) as grid_geojson:
         grid = json.load(grid_geojson)
         for i in grid["features"]:

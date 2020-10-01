@@ -16,7 +16,7 @@ code-check: ## Check code
 	safety check -r requirements.txt
 
 install: ## Install requirements
-	pip install -r requirements.txt
+	pip install -r requirements.txt && pip install .
 
 install-dev: ## Install development requirements
 	pip install -r requirements_dev.txt
